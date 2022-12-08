@@ -1,0 +1,91 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  min-width: 490px;
+  
+}
+
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+  }
+ 
+
+  header {
+    background: black;
+    color: white;
+    text-align: center;
+  }
+
+
+ header > h1 {
+    font-family: var(--fonte1);
+    font-variant: small-caps;
+    font-size: 8vw;
+    padding-top: 50px;
+  }
+  header p a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    
+    }
+    header > p {
+      padding-bottom: 20px;
+      font-family: var(--fonte1);
+      font-size: 2rem;
+    
+    }
+    section > p {
+      padding: 50px;
+      line-height: 2em;
+      font-style: italic;
+    }
+    section {
+      font-size: 4rem;
+      
+    }
+    .imagens {
+      background-attachment: fixed;
+      background-size: cover;
+      font-family: var(--fonte2);
+      background-color: black;
+      padding: 50px;
+      background-position: 100% 100%;
+
+    }
+  #img01 {
+    background-image: url('./imagens/background001.jpg');
+  }
+    #img02{
+      background-image: url('./imagens/background002.jpg');
+      
+    }
+   
+    
+    .imagens > p {
+      background: rgba(0, 0, 0, 0.266);
+      display: inline-block;
+      color: white;
+      border-radius: 5px;
+    
+    }
+    .normal {
+      font-family: var(--fonte2);
+      margin: 0px;
+    }
+    #rodape {
+      font-family: var(--fonte1);
+     background: black;
+     color: white;
+     font-size: 2rem;
+     text-align: center;
+    }
+    #rodape a {
+      text-decoration: none;
+      color: white;
+      font-weight: bolder;
+    }
+   
