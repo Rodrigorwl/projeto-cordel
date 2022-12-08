@@ -17,13 +17,14 @@
     background: black;
     color: white;
     text-align: center;
+    max-width: 100%;
   }
 
 
  header > h1 {
     font-family: var(--fonte1);
     font-variant: small-caps;
-    font-size: 8vw;
+    font-size: 6vw;
     padding-top: 50px;
   }
   header p a {
@@ -35,7 +36,7 @@
     header > p {
       padding-bottom: 20px;
       font-family: var(--fonte1);
-      font-size: 2rem;
+      font-size: 1rem;
     
     }
     section > p {
@@ -44,7 +45,7 @@
       font-style: italic;
     }
     section {
-      font-size: 4rem;
+      font-size: 3rem;
       
     }
     .imagens {
