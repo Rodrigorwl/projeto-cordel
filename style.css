@@ -95,8 +95,8 @@
       color: white;
       font-weight: bolder;
     }
-    @media (max-width: 800px) {
-      section.normal,section.imagens,header {
+    @media (max-width: 480px) {
+      section.normal,section.imagens,header,footer#rodape {
        width: 100%;
       }
      }
