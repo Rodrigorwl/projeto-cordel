@@ -1,54 +1,56 @@
-*{
+  *{
   padding: 0px;
   margin: 0px;
   min-width: 490px;
   
-}
-
-
-:root {
+  }
+  html, body {
+  background:white;
+  min-height: 100%;
+  }
+  :root {
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
-    --fonte2: 'Passion One', cursive;
+    --fonte2: Arial, Helvetica, sans-serif; 
     --fonte3: 'Sriracha', cursive;
   }
- 
-
   header {
     background: black;
     color: white;
     text-align: center;
     max-width: 100%;
+    
   }
-
-
- header > h1 {
+   header > h1 {
     font-family: var(--fonte1);
     font-variant: small-caps;
-    font-size: 6vw;
+    font-size: 8vw;
     padding-top: 50px;
   }
-  header p a {
+   header p a {
     text-decoration: none;
     color: white;
     font-weight: bolder;
     
     }
     header > p {
-      padding-bottom: 20px;
+      padding-bottom: 50px;
       font-family: var(--fonte1);
       font-size: 1rem;
-    
     }
     section > p {
       padding: 50px;
-      line-height: 2em;
       font-style: italic;
     }
     section {
-      font-size: 3rem;
+      font-size: 3em;
+      padding-top: 10vh;
+      padding-bottom: 10vh;;
+      padding-left: 30px;
+      line-height: 2em;
+      width: 100%;
       
     }
-    .imagens {
+    section.imagens {
       background-attachment: fixed;
       background-size: cover;
       font-family: var(--fonte2);
@@ -58,30 +60,29 @@
       min-width: 480px;
 
     }
-  #img01 {
+   section#img01 {
     background-image: url('./imagens/background001.jpg');
-    min-width: 480px;
-  }
-    #img02{
+     }
+   
+    section#img02{
       background-image: url('./imagens/background002.jpg');
-      min-width: 480px;
+     
       
     }
-   
-    
-    .imagens > p {
+    section.imagens > p {
       background: rgba(0, 0, 0, 0.266);
       display: inline-block;
       color: white;
       border-radius: 5px;
-      min-width: 480px;
+      width: 400px;
+      padding: 5px;
     
     }
-    .normal {
+    section.normal {
       font-family: var(--fonte2);
       margin: 0px;
     }
-    #rodape {
+    footer#rodape {
       font-family: var(--fonte1);
      background: black;
      color: white;
@@ -89,9 +90,13 @@
      text-align: center;
      padding: 30px;
     }
-    #rodape a {
+    footer#rodape a {
       text-decoration: none;
       color: white;
       font-weight: bolder;
     }
-   
+    @media (max-width: 800px) {
+      section.normal,section.imagens,header {
+       width: 100%;
+      }
+     }
