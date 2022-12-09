@@ -1,12 +1,13 @@
   *{
-  padding: 0px;
-  margin: 0px;
-  min-width: 490px;
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
   
   }
   html, body {
+  min-height: 100vh;
   background: darkgray;
-  min-height: 100%;
+  font-family: var(--fonte2);
   }
   :root {
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
@@ -17,73 +18,63 @@
     background: black;
     color: white;
     text-align: center;
-    max-width: 100%;
-    
   }
    header > h1 {
     font-family: var(--fonte1);
     font-variant: small-caps;
-    font-size: 8vw;
+    font-size: 10vw;
     padding-top: 50px;
   }
-   header p a {
+  header > p {
+    padding-bottom: 50px;
+  }
+   header a, footer a {
     text-decoration: none;
     color: white;
     font-weight: bolder;
-    
+  }
+  header a:hover{
+    text-decoration: underline;
+  }
+  section {
+    font-size: 3.5vw;
+    padding-top: 10vh;
+    padding-bottom: 10vh;;
+    padding-left: 30px;
+    line-height: 2em;
+    font-family: var(--fonte2);
     }
-    header > p {
-      padding-bottom: 50px;
-      font-family: var(--fonte1);
-      font-size: 1rem;
-    }
+
     section > p {
-      padding: 50px;
+      padding-bottom: 2em;
       font-style: italic;
     }
-    section {
-      font-size: 3em;
-      padding-top: 10vh;
-      padding-bottom: 10vh;;
-      padding-left: 30px;
-      line-height: 2em;
-      width: 100%;
+    section.normal {
       background-color: white;
-      
+      color: black;
     }
     section.imagens {
-      background-attachment: fixed;
+      background-color: rgb(51, 51, 51);
+      color: white;
+      box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
       background-size: cover;
-      font-family: var(--fonte2);
-      background-color: black;
-      padding: 50px;
-      background-position: 100% 100%;
-      min-width: 480px;
-      
-
+      background-attachment: fixed;
+      }
+      section.imagem > p {
+        display: inline-block;
+        padding: 5px;
+        background-color: rgba(0, 0, 0, 0.514);
+        text-shadow: 1px 1px 0px black;
     }
    section#img01 {
     background-image: url('./imagens/background001.jpg');
+    background-position: right center;
+    
      }
-   
     section#img02{
       background-image: url('./imagens/background002.jpg');
-     
-      
-    }
-    section.imagens > p {
-      background: rgba(0, 0, 0, 0.266);
-      display: inline-block;
-      color: white;
-      border-radius: 5px;
-      width: 400px;
-      padding: 5px;
+      }
     
-    }
-    section.normal {
-      font-family: var(--fonte2);
-      margin: 0px;
-    }
     footer#rodape {
       font-family: var(--fonte1);
      background: black;
@@ -97,7 +88,10 @@
       color: white;
       font-weight: bolder;
     }
-    @media (max-width: 480px) {
+    footer#rodape a:hover {
+      text-decoration: underline;
+    }
+    /* @media (max-width: 480px) {
       section.normal,section.imagens,header,footer#rodape {
        width: 100%;
       }
@@ -107,4 +101,4 @@
         width: 100%;
 
       }
-     }
+     } */
