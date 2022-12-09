@@ -99,4 +99,9 @@
       section.normal,section.imagens,header,footer#rodape {
        width: 100%;
       }
+      header,footer#rodape {
+        align-items: center;
+        width: fit-content;
+
+      }
      }
